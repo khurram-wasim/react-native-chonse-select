@@ -6,8 +6,8 @@ const ChonseSelect = ({
     initValue,
     onPress,
     colorActive = '#fff',
-    color = '#333',
-    borderColor = '#cdcdcd',
+    color = '#4C5C25',
+    borderColor = '#4C5C25',
     style,
     textStyle,
     label = '',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         borderRightWidth: 0,
         borderTopLeftRadius: 5,
         borderBottomLeftRadius: 5,
-        borderColor: '#383838',
+        borderColor: '#4C5C25',
         paddingVertical: 5,
         paddingHorizontal: 15,
         justifyContent: 'center',
@@ -103,9 +103,9 @@ const styles = StyleSheet.create({
         borderRightWidth: 0,
         borderTopLeftRadius: 5,
         borderBottomLeftRadius: 5,
-        borderColor: '#383838',
+        borderColor: '#4C5C25',
         paddingVertical: 5,
-        backgroundColor: '#05a5d1',
+        backgroundColor: '#4C5C25',
         paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     wrap: {
         borderWidth: 1,
         borderRightWidth: 0,
-        borderColor: '#383838',
+        borderColor: '#4C5C25',
         paddingVertical: 5,
         paddingHorizontal: 15,
         justifyContent: 'center',
@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
     wrapActive: {
         borderWidth: 1,
         borderRightWidth: 0,
-        borderColor: '#383838',
-        backgroundColor: '#05a5d1',
+        borderColor: '#4C5C25',
+        backgroundColor: '#4C5C25',
         paddingVertical: 5,
         paddingHorizontal: 15,
         justifyContent: 'center',
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderTopRightRadius: 5,
         borderBottomRightRadius: 5,
-        borderColor: '#383838',
+        borderColor: '#4C5C25',
         paddingVertical: 5,
         paddingHorizontal: 15,
         justifyContent: 'center',
@@ -141,10 +141,10 @@ const styles = StyleSheet.create({
     },
     wrapEndActive: {
         borderWidth: 1,
-        backgroundColor: '#05a5d1',
+        backgroundColor: '#4C5C25',
         borderTopRightRadius: 5,
         borderBottomRightRadius: 5,
-        borderColor: '#383838',
+        borderColor: '#4C5C25',
         paddingVertical: 5,
         paddingHorizontal: 15,
         justifyContent: 'center',
@@ -152,6 +152,6 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 13,
-        color: '#383838'
+        color: '#4C5C25'
     }
 });
