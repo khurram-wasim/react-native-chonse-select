@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Dimensions } from 'react-native';
+
+const chonseSelectWidth = Math.round(Dimensions.get('window').width) - 70;
 
 const ChonseSelect = ({
     data,
@@ -30,6 +32,7 @@ const ChonseSelect = ({
                                 activeOpacity={0.9}
                                 onPress={() => onPress(item)}
                                 style={[item.value == initValue ? styles.wrapStartActive : styles.wrapStart, {
+                                    width: Math.floor(chonseSelectWidth/size),
                                     borderColor: borderColor,
                                     height: height
                                 }]}>
@@ -46,6 +49,7 @@ const ChonseSelect = ({
                                 activeOpacity={0.9}
                                 onPress={() => onPress(item)}
                                 style={[item.value == initValue ? styles.wrapEndActive : styles.wrapEnd, {
+                                    width: Math.floor(chonseSelectWidth/size),
                                     borderColor: borderColor,
                                     height: height
                                 }]}>
@@ -61,6 +65,7 @@ const ChonseSelect = ({
                                 activeOpacity={0.9}
                                 onPress={() => onPress(item)}
                                 style={[item.value == initValue ? styles.wrapActive : styles.wrap, {
+                                    width: Math.floor(chonseSelectWidth/size),
                                     borderColor: borderColor,
                                     height: height
                                 }]}>
@@ -94,7 +99,7 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 5,
         borderColor: '#4C5C25',
         paddingVertical: 5,
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -106,7 +111,7 @@ const styles = StyleSheet.create({
         borderColor: '#4C5C25',
         paddingVertical: 5,
         backgroundColor: '#4C5C25',
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -115,7 +120,7 @@ const styles = StyleSheet.create({
         borderRightWidth: 0,
         borderColor: '#4C5C25',
         paddingVertical: 5,
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -125,7 +130,7 @@ const styles = StyleSheet.create({
         borderColor: '#4C5C25',
         backgroundColor: '#4C5C25',
         paddingVertical: 5,
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -135,7 +140,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 5,
         borderColor: '#4C5C25',
         paddingVertical: 5,
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -146,7 +151,7 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 5,
         borderColor: '#4C5C25',
         paddingVertical: 5,
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
         justifyContent: 'center',
         alignItems: 'center'
     },
