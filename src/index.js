@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, Dimensions } from 'react-native';
 
-const chonseSelectWidth = Math.round(Dimensions.get('window').width) - 70;
+
 
 const ChonseSelect = ({
     data,
@@ -15,9 +15,11 @@ const ChonseSelect = ({
     label = '',
     marginLeft = 0,
     height,
+    horizontalPadding=20,
     labelStyle
 }) => {
     const size = Object.keys(data).length;
+    const chonseSelectWidth = Math.round(Dimensions.get('window').width) - horizontalPadding;
     return (
         <View style={{ marginLeft: marginLeft }}>
             {label != '' &&
